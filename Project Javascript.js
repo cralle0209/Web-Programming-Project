@@ -35,3 +35,6 @@ function decrypt(message = '', key = ''){
 
     return decryptedMessage;
 }
+
+let encrypted = CryptoJS.Rabbit.encrypt("Message", "Secret Passphrase");
+let decrypted = CryptoJS.Rabbit.decrypt(encrypted, "Secret Passphrase");
