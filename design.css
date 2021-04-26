@@ -1,0 +1,25 @@
+
+body {
+    background-color: lightblue;
+  }
+  
+  header {
+    margin-left: 350px;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  h1 {
+      font-size: 20px;
+      margin-right: 0px;
+      font-size: normal;
+      font-weight: normal;
+  }
+
+  h2{
+      font-size: 20px;
+      margin-right: 0px;
+      font-size: normal;
+      font-weight: normal;
+  }
