@@ -23,3 +23,17 @@ body {
       font-size: normal;
       font-weight: normal;
   }
+
+#Progress_Status {
+width: 50%;
+background-color: #ddd;
+}
+
+#progress-bar {
+width: 1%;
+height: 35px;
+background-color: #4CAF50;
+text-align: center;
+line-height: 32px;
+color: red;
+}
