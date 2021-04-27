@@ -1,6 +1,6 @@
 <script>
 function update() {
-var element = document.getElementById("myprogressBar");
+var element = document.getElementById("progress-bar");
 var width = 1;
 var identity = setInterval(scene, 10);
 function scene() {
