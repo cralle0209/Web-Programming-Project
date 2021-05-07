@@ -50,7 +50,7 @@ $(function(){
 
 		let reader = new FileReader();
 
-		if(body.hasClass('encrypt-aes')){
+		if(body.hasClass('encrypt aes')){
 
 		
 			reader.onload = function(e){
@@ -69,7 +69,7 @@ $(function(){
 		
 		let reader = new FileReader();
 
-		if(body.hasClass('encrypt-des')){
+		if(body.hasClass('encrypt des')){
 
 		
 			reader.onload = function(e){
@@ -88,7 +88,7 @@ $(function(){
 	
 		let reader = new FileReader();
 
-		if(body.hasClass('encrypt-rabbit')){
+		if(body.hasClass('encrypt rabbit')){
 
 		
 			reader.onload = function(e){
