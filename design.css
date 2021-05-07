@@ -39,7 +39,7 @@ body{
 	transition:top 0.4s;
 }
 
-#main > div{  /* The phase divs */
+#main > div{
 	height:100%;
 	position:relative;
 }
@@ -87,15 +87,15 @@ a.back:hover{
 	display:none;
 }
 
-body.encrypt .if-encrypt-aes{
+body.encrypt .if-encrypt aes{
 	display:block;
 }
 
-body.encrypt .if-encrypt-des{
+body.encrypt .if-encrypt des{
 	display:block;
 }
 
-body.encrypt .if-encrypt-rabbit{
+body.encrypt .if-encrypt rabbit{
 	display:block;
 }
 
@@ -159,15 +159,15 @@ body.encrypt .if-encrypt-rabbit{
 	width:216px;
 }
 
-.button.encrypt-aes::before{
+.button.encrypt aes::before{
 	background-position: 0 0;
 }
 
-.button.encrypt-des::before{
+.button.encrypt des::before{
 	background-position: 0 0;
 }
 
-.button.encrypt-rabbit::before{
+.button.encrypt rabbit::before{
 	background-position: 0 0;
 }
 
