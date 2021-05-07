@@ -39,7 +39,7 @@ body{
 	transition:top 0.4s;
 }
 
-#main> div{
+#main > div{  /* The phase divs */
 	height:100%;
 	position:relative;
 }
@@ -87,7 +87,15 @@ a.back:hover{
 	display:none;
 }
 
-body.encrypt .if-encrypt{
+body.encrypt .if-encrypt-aes{
+	display:block;
+}
+
+body.encrypt .if-encrypt-des{
+	display:block;
+}
+
+body.encrypt .if-encrypt-rabbit{
 	display:block;
 }
 
@@ -151,7 +159,15 @@ body.encrypt .if-encrypt{
 	width:216px;
 }
 
-.button.encrypt::before{
+.button.encrypt-aes::before{
+	background-position: 0 0;
+}
+
+.button.encrypt-des::before{
+	background-position: 0 0;
+}
+
+.button.encrypt-rabbit::before{
 	background-position: 0 0;
 }
 
@@ -167,19 +183,19 @@ body.encrypt .if-encrypt{
 	background-position:-48px 0;
 }
 
-#part1{
+#phase1{
 	background-color:#000000;
 }
 
-body.encrypt #part2{
+body.encrypt #phase2{
 	background-color: #000000;
 }
 
-#part3{
+#phase3{
 	background-color:#000000;
 }
 
-#part3 input[type=password]{
+#phase3 input[type=password]{
 	background-color: #fff;
 	border: none;
 	padding: 8px 18px;
@@ -195,11 +211,11 @@ body.encrypt #part2{
 	color: #555;
 }
 
-#part4{
+#phase4{
 	background-color:#FFD700;
 }
 
-#part1 .content{	margin-top: -140px;}
-#part2 .content{	margin-top:-110px;}
-#part3 .content{	margin-top: -157px;}
-#part4 .content{	margin-top: -100px;}
+#phase1 .content{	margin-top: -140px;}
+#phase2 .content{	margin-top:-110px;}
+#phase3 .content{	margin-top: -157px;}
+#phase4 .content{	margin-top: -100px;}
