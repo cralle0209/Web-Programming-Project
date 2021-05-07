@@ -2,11 +2,11 @@
 Connor Allen, Clayton Berry, Ammar Arif
 
 HTML:
-The website opens up to ask which type of encryption you would like to use to encrypt your file with in the form of three radio buttons: one for AES, one for DES, and one for Rabbit encryption. The user will be asked to upload a file with the upload button on the left side of the page. After clicking a button and uploading the file, the user can hit the submit button which will encrypt the file.
+The website opens up to ask which type of encryption you would like to use to encrypt your file with using three colored buttons. Upon clicking one of the buttons, you'll be asked to upload a file, no larger than 1mb in size to prevent crashing the website. After that, you'll be required to enter an encryption key. If the key is too small, the website will ask you to input a larger key. After that is done, depending on what encryption algorithm was used, the website will encrypt the content, which can be downloaded on the final page.
 
 CSS:
-The CSS centers the text and buttons in the middle of the webpage, while creating a light blue background color to make the webpage more appealing to look at.
+The CSS styles each button and facilitates ease of movement between pages, while giving the webpage its black background to make it easier on the eyes.
 
 Javascript:
-The Javascript begins by implementing the DES level of encryption. As the file moves on, it will implement AES or Rabbit encryption based on which option the user chose on the HTML.
+The JavaScript functions within are designed to implement the functionality of the website. In the code, it encrypts for each algorithm using if statements. When the program passes through those statements, it encrypts the data files inserted using e.target.result to finalize the encryption.
 
