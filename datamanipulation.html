@@ -1,53 +1,64 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="design.css">
-        <title>Data Manipulation Project</title>
-        <script src="ProjectJavaScript.js">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </head>
 
-        <header>
-            Data Manipulation Project
-        </header>
-    <body>
-    <h1>  
-        <p>
-            Select Method Below
-        </p>
-    
-        <!--Manipulation Buttons-->
-        
-        <form action="" method="post">
-            <input type="radio" name="button" value="AES" /> AES <br>
-            <input type="radio" name="button" value="DES" /> DES <br>
-            <input type="radio" name="button" value="Rabbit" /> Rabbit
-          </form>
-    </h1>    
+	<head>
+		<meta charset="utf-8"/>
+		<title>Data Manipulation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="assets/css/design.css" rel="stylesheet" />
 
-    <h2>
-         <!--File Upload Button-->
-         <form action="/action_page.php">
-            <input type="file" id="myFile" name="filename">
-            <input type="submit">
-          </form>
-    </h2>   
-       
+	</head>
 
-        <!-- Progress bar -->
-        <div id="Progress_Status">
-        <div class="progress-bar"></div>
-        </div>
+	<body>
 
-        <!-- Display upload status -->
-        <div id="uploadStatus"></div>
+		<a class="back"></a>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Does not work currently-->
+		<div id="stage">
 
-        <!--Output Box-->
-        <output>
+			<div id="step1">
+				<div class="content">
+					<h1>Choose encryption algorithm:</h1>
+					<a class="button encrypt green">AES</a>
+					<a class="button encrypt red">DES</a>
+					<a class="button encrypt blue">Rabbit</a>
+				</div>
+			</div>
 
-        </output>
+			<div id="step2">
 
-    </body>
+				<div class="content if-encrypt">
+					<h1>Choose which file to encrypt</h1>
+					<a class="button browse blue">Browse</a>
+
+					<input type="file" id="encrypt-input" />
+				</div>
+
+			</div>
+
+			<div id="step3">
+
+				<div class="content if-encrypt">
+					<h1>Enter an encryption key:</h1>
+					<input type="password" />
+					<a class="button process gold">Encrypt!</a>
+				</div>
+
+			</div>
+
+			<div id="step4">
+
+				<div class="content">
+					<h1>Your file is ready!</h1>
+					<a class="button download purple">Download</a>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/aes.js"></script>
+	<script src="assets/js/tripledes.js"></script>
+	<script src="assets/js/rabbit.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="assets/js/ProjectJavaScript.js"></script>
+
 </html>
