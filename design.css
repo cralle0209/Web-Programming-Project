@@ -29,7 +29,7 @@ body{
 	overflow:hidden;
 }
 
-#stage{
+#main{
 	width:100%;
 	height:100%;
 	position:absolute;
@@ -39,13 +39,13 @@ body{
 	transition:top 0.4s;
 }
 
-#stage > div{  /* The step divs */
+#main> div{
 	height:100%;
 	position:relative;
 }
 
 
-#stage h1{
+#main h1{
 	font-weight:normal;
 	font-size:48px;
 	text-align:center;
@@ -139,8 +139,6 @@ body.encrypt .if-encrypt{
 	background-color: #FFD700;
 }
 
-/* Styles for specific buttons */
-
 .button.browse{
 	width:180px;
 }
@@ -169,19 +167,19 @@ body.encrypt .if-encrypt{
 	background-position:-48px 0;
 }
 
-#step1{
+#part1{
 	background-color:#000000;
 }
 
-body.encrypt #step2{
+body.encrypt #part2{
 	background-color: #000000;
 }
 
-#step3{
+#part3{
 	background-color:#000000;
 }
 
-#step3 input[type=password]{
+#part3 input[type=password]{
 	background-color: #fff;
 	border: none;
 	padding: 8px 18px;
@@ -197,11 +195,11 @@ body.encrypt #step2{
 	color: #555;
 }
 
-#step4{
+#part4{
 	background-color:#FFD700;
 }
 
-#step1 .content{	margin-top: -140px;}
-#step2 .content{	margin-top:-110px;}
-#step3 .content{	margin-top: -157px;}
-#step4 .content{	margin-top: -100px;}
+#part1 .content{	margin-top: -140px;}
+#part2 .content{	margin-top:-110px;}
+#part3 .content{	margin-top: -157px;}
+#part4 .content{	margin-top: -100px;}
